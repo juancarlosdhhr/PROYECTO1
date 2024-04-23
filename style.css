@@ -24,34 +24,51 @@
     
     .grid-container {
     display: grid; 
+    align-items: center;
+   
  
 
     }
 
 
-}
 
 
-
-}
+    header.grid-container {
+        display: grid;
+        grid-template-columns: auto 1fr auto; /* Tres columnas: una para el logo, otra para la navegación y otra para la búsqueda */
+        align-items: center; /* Alinea verticalmente los elementos */
+        justify-content: center;
+        text-align: center;
+    }
 
 .buscar {
-display: grid;
-align-items:right;
-
+    grid-column: 2; /* Coloca el elemento .buscar en la segunda columna */
+    display: flex; /* Utiliza flexbox */
+    justify-content: flex-end; /* Alinea los elementos al final del contenedor */
+    align-items: center; /* Alinea verticalmente los elementos */
 }
 
     input[type="text"] {
 padding-left: 30px;
+padding-right: 30px;
 font-size: 12px;
 padding: 10px 30px;
+border-radius: 20px;
+
+
 
  }
     
 
 .buscar i {
 margin-left: -30px; /* Ajusta el margen izquierdo para superponer el ícono sobre el input */
-    }
+    .buscar i {
+    grid-column: 2; /* Coloca el ícono en la segunda columna */
+    margin-right: 10px; /* Ajusta el margen izquierdo para agregar espacio entre el input y el ícono */
+ 
+}
+
+}
 
 
     header > img {
@@ -61,7 +78,8 @@ margin-left: -30px; /* Ajusta el margen izquierdo para superponer el ícono sobr
     }
     
     header.grid-container{
-        grid-template-columns: 200px 1fr;
+    
+        grid-template-columns: 100px 1fr;
         padding: 20px;
         gap: 50px;
         justify-items: end;
@@ -80,13 +98,20 @@ margin-left: -30px; /* Ajusta el margen izquierdo para superponer el ícono sobr
     
     
     }
+
+    
+a i {
+    margin-right: 5px; /* Aplica un margen a la derecha de los iconos */
+}
+
     
     .list {
-    grid-template-columns: repeat(4, 1fr);
-    font-size: 20px;
+
+    grid-template-columns: repeat(6, 1fr);
+    font-size: 10px;
     gap: 20px;
-    width: 50%;
-    padding-top: 15px;
+   
+    padding-top: 3px;
    
     
     }
@@ -104,3 +129,50 @@ margin-left: -30px; /* Ajusta el margen izquierdo para superponer el ícono sobr
     
     
     }
+
+
+    /* ESTILOS HERO */
+
+    /* IMAGEN  */
+
+
+
+    #hero img {
+        max-width: 100%; /* La imagen no superará el ancho del contenedor padre */
+        height: auto; /* La altura se ajustará automáticamente manteniendo la proporción */
+        display: block; /* Convierte la imagen en un bloque para poder centrarla */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+        width: 600px; /* Tamaño máximo deseado para la imagen */
+    }
+    
+    #hero {
+background-color: black;
+color: aliceblue;
+
+    }
+
+#hero h1 {
+align-items: center;
+justify-content: center;
+justify-items: center;
+width: 100%;
+}
+
+
+   /*  VIDEO */
+
+   .video-container {
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+  
+  .video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+ 
+  
+ 
+
