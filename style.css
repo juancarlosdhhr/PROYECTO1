@@ -20,6 +20,7 @@
         color: rgb(218, 162, 11);
         font-size: 15px;
         justify-content: left;
+        font-weight: 500;
     }
     
     .grid-container {
@@ -115,6 +116,8 @@ a i {
    
     
     }
+
+
     
     @media (max-width: 800px) {
     .menu {
@@ -146,17 +149,39 @@ a i {
     }
     
     #hero {
+        display: grid;
 background-color: black;
 color: aliceblue;
+display: grid;
 
+
+                    
+                    
     }
 
-#hero h1 {
-align-items: center;
-justify-content: center;
-justify-items: center;
-width: 100%;
+
+
+
 }
+
+#hero h1 {
+   
+background-color: blueviolet;
+    
+    }
+    
+    slogan {
+        grid-area: slogan;
+        background-color: #8d0a0aee;
+                               
+    }
+
+    imagen {
+        grid-area: imagen;
+        background-color: #161616ee;
+                               
+    }
+
 
 
    /*  VIDEO */
