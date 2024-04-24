@@ -117,7 +117,7 @@ a i {
     
     }
 
-
+/* RESPONSIVE */
     
     @media (max-width: 800px) {
     .menu {
@@ -129,9 +129,24 @@ a i {
         display: none;
     }
     
-    
+    #hero {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 100%;
+
+ }
+
+
+
+ .hero_img {
+width: 100%;
     
     }
+}
+
+
 
 
     /* ESTILOS HERO */
@@ -149,24 +164,31 @@ a i {
     }
     
     #hero {
-        display: grid;
-background-color: black;
-color: aliceblue;
-display: grid;
-
-
-                    
-                    
+        display: flex;             /* Activa Flexbox en el contenedor */
+        justify-content: center;   /* Centra horizontalmente */
+        align-items: center;       /* Centra verticalmente */
+        height: 100vh;             /* O cualquier altura deseada, pero 100vh ocupará toda la altura de la ventana */
+        text-align: center;        /* Asegura que el texto dentro del h1 también esté centrado horizontalmente */
+        background-color: black;   /* Fondo para hacerlo visible (opcional) */
+        color: aliceblue;          /* Color del texto (opcional) */
     }
+    
+
+
+                    
+                    
+    
 
 
 
 
-}
+
 
 #hero h1 {
-   
-background-color: blueviolet;
+text-align: center;
+align-content: center;
+justify-content: center;
+
     
     }
     
@@ -182,6 +204,21 @@ background-color: blueviolet;
                                
     }
 
+
+    #hero h1 > span {
+        background-image: linear-gradient(45deg, #a79f35, #67bb67, rgb(135, 165, 192), rgb(189, 206, 33)); /* Define el gradiente de verde */
+        -webkit-background-clip: text; 
+        background-clip: text; 
+        color: transparent; 
+
+
+    }
+
+.imagen {
+display: grid;
+grid-template-columns: 1fr;
+
+}
 
 
    /*  VIDEO */
@@ -263,8 +300,9 @@ cursor: pointer;
 padding: 10px 10px;
 margin: 10px; /* Para que el boton se vaya un poco mas hacia los bordes */
 border: 1px solid aliceblue;
-border-radius: 10px;
-background-color: beige;
+border-radius: 15px;
+background-color: black;
+color: aliceblue;
 }
  
 
