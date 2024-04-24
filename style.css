@@ -144,6 +144,23 @@ a i {
 width: 100%;
     
     }
+
+    #hero {
+        display: flex; /* Usa flexbox para alinear elementos verticalmente */
+        flex-direction: column; /* Apila los elementos verticalmente */
+        justify-content: center; /* Centra verticalmente los elementos */
+        align-items: center; /* Centra horizontalmente los elementos */
+    }
+    
+    #hero img {
+        max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+        margin-bottom: 20px; /* Reduce el espacio entre la imagen y el texto */
+    }
+    
+    #hero h1 {
+        margin-top: 20px; /* Reduce el espacio entre el texto y la imagen */
+    }
+    
 }
 
 
