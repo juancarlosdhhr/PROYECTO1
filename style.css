@@ -198,6 +198,73 @@ background-color: blueviolet;
   }
   
  
-  
+  /* ESTILOS CARDS */
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea dos columnas */
+    grid-template-rows: auto auto; /* Crea tantas filas como sean necesarias, en este caso, dos */
+    gap: 10px; /* Espacio entre tarjetas */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 20px; /* Espacio interior para no pegar el contenido a los bordes */
+    background-color: black;
+    color: aliceblue;
+}
+
+
+  .card {
+display: grid;
+width: 500px;
+margin: 200px auto; /* Así le ponemos un margin top y bottom  */
+padding: 10px 0px ; /* Arriba y abajo 10px y 0 px a la izquierda y a la derecha */
+border-radius: 10px;
+gap: 20px; /* Este gap solo separa los hijos de card (h4, la imagen, el parrafo y el div) */
+box-shadow: 0px 6px 23px -15px black ; /* El profe lo ha sacado de un shadow generator de internet */
+/* 0px --> izquierda y derecha   
+6px --> arriba y abajo (positivos hacia abajo y negativos hacia arriba
+23px --> es el difuminado 
+-15 --> Como de fuerte se va a ver la sombra; */
+transition: transform 0.5s;
+}
+
+.card:hover { /* Le vamos a decir a la carta que cuando pasemos el ratón por encima (cuando hagamos hover),
+    vamos a utilizar la propia transform para escalar a 1.1 lo que mide la propia carta */
+transform: scale(1.1);  
+
+
+}
+
+.card > img {
+    width: 100%;
+    object-fit: contain;  /* Para que no se nos salga la imagen y podamos ir viendo nuestra carta por completo. */
+}
+
+.card > h4 { /* Vamos a maquetar el titulo de la carta */
+    font-size: 20px;
+
+
+}
+
+.card > div { /* Para maquetar a la vez el precio y el botón
+ */
+grid-template-columns: 1fr 1fr; /* Y que se vea el precio a la izquierda y el botón a la derecha. Aquí no 
+usamos el repeat porque son solo dos columnas y no tiene mucho sentido*/
+} 
+
+.description {
+text-align: justify;
+margin: 0px 20px; /* 0 margenes arriba y abajo y 20px a la izquierda y a la derecha */
+
+}
+
+.card button {
+cursor: pointer;
+padding: 10px 10px;
+margin: 10px; /* Para que el boton se vaya un poco mas hacia los bordes */
+border: 1px solid aliceblue;
+border-radius: 10px;
+background-color: beige;
+}
  
 
