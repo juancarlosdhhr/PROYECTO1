@@ -161,6 +161,17 @@ width: 100%;
         margin-top: 20px; /* Reduce el espacio entre el texto y la imagen */
     }
     
+    .cards-container {
+display: grid;
+grid-template-rows: 1fr;
+
+
+
+    }
+
+
+
+
 }
 
 
@@ -269,7 +280,7 @@ grid-template-columns: 1fr;
 
   .card {
 display: grid;
-width: 500px;
+width: 500px; 
 margin: 200px auto; /* Así le ponemos un margin top y bottom  */
 padding: 10px 0px ; /* Arriba y abajo 10px y 0 px a la izquierda y a la derecha */
 border-radius: 10px;
