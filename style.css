@@ -27,12 +27,13 @@
     display: grid; 
     align-items: center;
    
+   
  
 
     }
 
 
-
+/* ESTILOS HEADER */
 
     header.grid-container {
         display: grid;
@@ -71,9 +72,6 @@ margin-left: -30px; /* Ajusta el margen izquierdo para superponer el ícono sobr
 }
 
 } 
-
-
-
 
 
 
@@ -122,9 +120,23 @@ a i {
     
     }
 
-/* RESPONSIVE */
+                                        /* RESPONSIVE */
     
     @media (max-width: 800px) {
+
+       #cards-container {
+        display: grid;  
+    } 
+ 
+
+   
+
+    .card {
+      width: 90%;  
+      margin: 20px auto;
+    }
+
+
     .menu {
         display: block;
     
@@ -140,44 +152,31 @@ a i {
         flex-wrap: wrap;
         box-sizing: border-box;
         width: 100%;
+        max-height: 300px;
 
  }
 
 
 
- .hero_img {
-width: 100%;
+ #hero img {
+width: 90%;
+height: auto;
+max-height: 200px;
     
     }
 
-    #hero {
-        display: flex; /* Usa flexbox para alinear elementos verticalmente */
-        flex-direction: column; /* Apila los elementos verticalmente */
-        justify-content: center; /* Centra verticalmente los elementos */
-        align-items: center; /* Centra horizontalmente los elementos */
-    }
-    
-    #hero img {
-        max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
-        margin-bottom: 20px; /* Reduce el espacio entre la imagen y el texto */
-    }
-    
-    #hero h1 {
-        margin-top: 20px; /* Reduce el espacio entre el texto y la imagen */
-    }
-    
-    .cards-container {
-display: grid;
-grid-template-rows: 1fr;
+   
+   
+   
 
-
-
-    }
+}   
 
 
 
 
-}
+
+
+
 
 
 
@@ -193,7 +192,7 @@ grid-template-rows: 1fr;
         height: auto; /* La altura se ajustará automáticamente manteniendo la proporción */
         display: block; /* Convierte la imagen en un bloque para poder centrarla */
         margin: 0 auto; /* Centra la imagen horizontalmente */
-        width: 600px; /* Tamaño máximo deseado para la imagen */
+       
     }
     
     #hero {
@@ -209,14 +208,6 @@ grid-template-rows: 1fr;
 
 
                     
-                    
-    
-
-
-
-
-
-
 #hero h1 {
 text-align: center;
 align-content: center;
@@ -226,12 +217,7 @@ padding: 20px;
     
     }
     
-    slogan {
-        grid-area: slogan;
-        background-color: #8d0a0aee;
-                               
-    }
-
+ 
     imagen {
         grid-area: imagen;
         background-color: #161616ee;
@@ -255,6 +241,9 @@ grid-template-columns: 1fr;
 }
 
 
+/* ESTILOS VIDEO */
+
+
    /*  VIDEO */
 
    .video-container {
@@ -271,7 +260,10 @@ grid-template-columns: 1fr;
  
   /* ESTILOS CARDS */
 
-  .cards-container {
+
+
+
+  #cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Crea dos columnas */
     grid-template-rows: auto auto; /* Crea tantas filas como sean necesarias, en este caso, dos */
@@ -286,7 +278,7 @@ grid-template-columns: 1fr;
 
   .card {
 display: grid;
-width: 500px; 
+width: auto; 
 margin: 200px auto; /* Así le ponemos un margin top y bottom  */
 padding: 10px 0px ; /* Arriba y abajo 10px y 0 px a la izquierda y a la derecha */
 border-radius: 10px;
@@ -341,3 +333,31 @@ width: 100px;
 }
  
 
+footer {
+            
+    position: relative;
+     bottom: 0; /* En la parte de abajo de la pagina */
+     left: 0;
+     width: 100%;
+     display: flex;
+     padding: 50px;
+     justify-content: space-between;
+     gap: 30px;
+     flex-wrap: wrap;
+     background-color:  black;
+     
+   
+     
+ }
+ 
+
+footer ul {
+     list-style: none;
+     width: 250px;
+     color: aliceblue;
+     font-size: 20px;
+     font-weight: 700;
+     font-size: 15px;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
