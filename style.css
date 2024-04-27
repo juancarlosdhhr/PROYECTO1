@@ -42,13 +42,13 @@
         text-align: center;
     }
 
-.buscar {
+/* .buscar {
     grid-column: 2; /* Coloca el elemento .buscar en la segunda columna */
     display: flex; /* Utiliza flexbox */
     justify-content: flex-end; /* Alinea los elementos al final del contenedor */
     align-items: center; /* Alinea verticalmente los elementos */
-}
-
+} 
+ */
     input[type="text"] {
 padding-left: 30px;
 padding-right: 30px;
@@ -61,15 +61,20 @@ border-radius: 20px;
  }
     
 
-.buscar i {
+ .buscar i {
 margin-left: -30px; /* Ajusta el margen izquierdo para superponer el ícono sobre el input */
     .buscar i {
     grid-column: 2; /* Coloca el ícono en la segunda columna */
     margin-right: 10px; /* Ajusta el margen izquierdo para agregar espacio entre el input y el ícono */
+    
  
 }
 
-}
+} 
+
+
+
+
 
 
     header > img {
@@ -216,6 +221,7 @@ grid-template-rows: 1fr;
 text-align: center;
 align-content: center;
 justify-content: center;
+padding: 20px;
 
     
     }
