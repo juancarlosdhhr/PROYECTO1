@@ -324,6 +324,12 @@ footer ul {
     
     @media (max-width: 768px) {
 
+       
+       body {
+
+        background-color: black;
+       }
+       
         #cards-container {
          display: grid;  
          width: 100%;
