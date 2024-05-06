@@ -250,13 +250,13 @@ transform: scale(1.1);
 }
 
 .card > img {
-    width: 100%;
+    width: 90%;
     object-fit: contain;  /* Para que no se nos salga la imagen y podamos ir viendo nuestra carta por completo. */
-    max-width: 500px;
+   /*  max-width: 500px;
     max-height: 500px;
     min-width: 500px;
     min-height: 500px;
-    
+     */
 }
 
 .card > h4 { /* Vamos a maquetar el titulo de la carta */
@@ -336,6 +336,7 @@ footer ul {
          width: 100%;
          grid-template-columns: 1fr;
          grid-template-rows: auto;
+         
      } 
   
  
@@ -344,13 +345,20 @@ footer ul {
      .card {
        width: 90%;  
        margin: 20px auto;
-     justify-content: center;
-     align-items: center;
-     justify-items: center;
-     text-align: center;
+       justify-content: center;
+       align-items: center;
+       justify-items: center;
+       text-align: center;
+     
      }
  
- 
+
+
+
+     .description {
+       display: none;
+
+
      .menu {
          display: block;
      
@@ -383,6 +391,10 @@ footer ul {
 align-items: center;
 align-content: center;
 justify-content: center;
+justify-items: center;
+text-align: center;
+margin: auto;
+
 
     }
     
