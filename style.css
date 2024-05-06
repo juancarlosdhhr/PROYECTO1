@@ -213,11 +213,15 @@ grid-template-columns: 1fr;
 
   #cards-container {
     display: grid;
+    box-sizing: border-box;
     grid-template-columns: repeat(2, 1fr); /* Crea dos columnas */
     grid-template-rows: auto auto; /* Crea tantas filas como sean necesarias, en este caso, dos */
     gap: 10px; /* Espacio entre tarjetas */
     justify-content: center; /* Centra el contenido horizontalmente */
+    justify-items: center;
     align-items: center; /* Centra el contenido verticalmente */
+    align-content: center;
+    padding-left: 10%;
     padding: 20px; /* Espacio interior para no pegar el contenido a los bordes */
     background-color: black;
     color: aliceblue;
@@ -318,6 +322,7 @@ footer ul {
 
         #cards-container {
          display: grid;  
+         width: 100%;
          grid-template-columns: 1fr;
          grid-template-rows: auto;
      } 
@@ -328,6 +333,7 @@ footer ul {
      .card {
        width: 90%;  
        margin: 20px auto;
+       padding-left: 5%;
      }
  
  
@@ -359,7 +365,12 @@ footer ul {
      
      }
  
-    
+    footer {
+align-items: center;
+align-content: center;
+justify-content: center;
+
+    }
     
     
  
