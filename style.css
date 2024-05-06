@@ -155,16 +155,15 @@ a i {
     
 
 
-                    
-#hero h1 {
+     #hero h1 {
 text-align: center;
 align-content: center;
 justify-content: center;
-padding: 20px;
+padding-left: 10% ;
 
-    
-    }
-    
+     }               
+   
+   
  
     imagen {
         grid-area: imagen;
@@ -222,7 +221,7 @@ grid-template-columns: 1fr;
     align-items: center; /* Centra el contenido verticalmente */
     align-content: center;
     padding-left: 10%;
-    padding: 20px; /* Espacio interior para no pegar el contenido a los bordes */
+     
     background-color: black;
     color: aliceblue;
 }
@@ -253,6 +252,11 @@ transform: scale(1.1);
 .card > img {
     width: 100%;
     object-fit: contain;  /* Para que no se nos salga la imagen y podamos ir viendo nuestra carta por completo. */
+    max-width: 500px;
+    max-height: 500px;
+    min-width: 500px;
+    min-height: 500px;
+    
 }
 
 .card > h4 { /* Vamos a maquetar el titulo de la carta */
