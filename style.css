@@ -43,35 +43,7 @@
         text-align: center;
     }
 
-/* .buscar {
-    grid-column: 2; /* Coloca el elemento .buscar en la segunda columna */
-    display: flex; /* Utiliza flexbox */
-    justify-content: flex-end; /* Alinea los elementos al final del contenedor */
-    align-items: center; /* Alinea verticalmente los elementos */
-} 
- */
-    input[type="text"] {
-padding-left: 30px;
-padding-right: 30px;
-font-size: 12px;
-padding: 10px 30px;
-border-radius: 20px;
 
-
-
- }
-    
-
- .buscar i {
-margin-left: -30px; /* Ajusta el margen izquierdo para superponer el ícono sobre el input */
-    .buscar i {
-    grid-column: 2; /* Coloca el ícono en la segunda columna */
-    margin-right: 10px; /* Ajusta el margen izquierdo para agregar espacio entre el input y el ícono */
-    
- 
-}
-
-} 
 
 
 
@@ -357,16 +329,17 @@ footer ul {
 
      .description {
        display: none;
+    }
 
-
-     .menu {
-         display: block;
-     
+  .menu {
+         display: block;       
      }
-     
+
      header > nav {
-         display: none;
+        display: none;
+
      }
+
      
      #hero {
          display: flex;
@@ -393,7 +366,8 @@ align-content: center;
 justify-content: center;
 justify-items: center;
 text-align: center;
-margin: auto;
+
+
 
 
     }
