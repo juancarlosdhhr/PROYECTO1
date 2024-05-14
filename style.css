@@ -173,11 +173,13 @@ grid-template-columns: 1fr;
     position: relative;
     display: grid;
     place-items: center;
+    background-color: black;
   }
   
   .video {
     max-width: 100%;
     height: auto;
+    background-color: black;
   }
   
  
